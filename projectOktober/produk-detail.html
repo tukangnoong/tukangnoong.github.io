@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Toko</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="assets/img/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="#">Halaman Awal</a></li>
+                        <li><a href="#">Kategori</a></li>
+                        <!--<li><a href="#">Anu</a></li>-->
+                    </ul>
+                </nav>
+                <img src="assets/img/menu.png" class="menu-icon" onclick="menutoogle()">
+            </div>
+        </div>
+<!-- Single Produk -->
+<div class="small-container single-produk">
+    <div class="row">
+        <div class="col-2">
+            <img src="assets/img/product-1.jpg" width="100%" id="produkImg">
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="assets/img/gallery-1.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="assets/img/gallery-2.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="assets/img/gallery-3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="assets/img/gallery-4.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-2">
+            <p>Home/Produk</p>
+            <h1>Nama Produk</h1>
+            <h4>Rp. 50.000</h4>
+            <!--<select>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select>
+            <input type="number" value="1">-->
+            <a href="" class="btn">Hub. CS via WhatsApp</a>
+            <h3>Deskripsi Produk <i class="fa fa-indent"></i></h3>
+            <br>
+            <p>blah blah blah blah blah.</p>
+        </div>
+    </div>
+</div>
+<!--Title-->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Produk Terkait</h2>
+        <p>Selengkapnya</p>
+    </div>
+</div>
+<!--produk-->
+<div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <img src="assets/img/product-3.jpg">
+            <h4>Nama Produk Terkait 1</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rp. 100.000</p>
+        </div>
+        <div class="col-4">
+            <img src="assets/img/product-6.jpg">
+            <h4>Nama Produk Terkait 2</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rp. 100.000</p>
+        </div>
+        <div class="col-4">
+            <img src="assets/img/product-2.jpg">
+            <h4>Nama Produk Terkait 3</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rp. 100.000</p>
+        </div>
+        <div class="col-4">
+            <img src="assets/img/product-4.jpg">
+            <h4>Nama Produk Terkait 4</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rp. 100.000</p>
+        </div>
+    </div>
+</div>
+<!---Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+             <img src="assets/img/logo.png">
+             <p>slogan toko</p>   
+            </div>
+            <div class="footer-col-2">
+                <h3>Ikuti Kami</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                </ul>
+               </div>
+               <div class="footer-col-3">
+                <h3>Kontak</h3>
+                <ul>
+                    <li>WhatsApp</li>
+                    <li>Email</li>
+                </ul>
+               </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Nama Toko</p>
+    </div>
+</div>
+<script>
+    /* js toogle menu */
+    var menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight = "0px";
+    function menutoogle(){
+        if(menuItems.style.maxHeight == "0px"){
+            menuItems.style.maxHeight = "200px"
+        }else{
+            menuItems.style.maxHeight = "0px"
+        }
+    }
+    /* Prouk Galeri */
+    var produkImg = document.getElementById("produkImg");
+    var smallImg = document.getElementsByClassName("small-img");
+    smallImg[0].onclick = function()
+    {
+        produkImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function()
+    {
+        produkImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function()
+    {
+        produkImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick = function()
+    {
+        produkImg.src = smallImg[3].src;
+    }
+</script>
+</body>
+</html>
